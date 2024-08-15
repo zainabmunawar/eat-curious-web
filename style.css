@@ -1,0 +1,198 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    /* transition: 2s linear; */
+}
+.navbar{
+    background-color: #042F1A;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width:100%;
+    height: 10vw;
+    position: fixed;
+    /* overflow: hidden; */
+  
+   
+}
+.logoeat{
+    height:10vw;
+    width:17svw;
+}
+
+a{
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbtn{
+    height: 3vw;
+    width:9vw;
+    border-radius: 0.2vw;
+    font-size: 1.3vw;
+    background-color: #FF73B5;
+    color:#042F1A;
+}
+.header{
+    /* height:100vh; */
+    background-color: #042F1A;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vw;
+    
+}
+.header h1{
+    font-size: 12vw;
+    transition:all 0.5s linear;
+}
+
+.eat1{
+    position: relative;
+    bottom: 10vw;
+    height:25vw;
+    width:25vw;
+    transition:all 0.5s linear;
+}
+.hmind{
+    position:relative;
+    top:-22vw;
+}
+.eat2{
+    height:12vw;
+    width:12vw;
+    position:fixed;
+    margin:15vw 137vw 0vw 45vw;
+ 
+   
+   
+}
+.eat2.active{
+    position:fixed;
+    transform: rotate(45deg);
+    transition : transform 5s steps 0s;
+}
+.pg2{
+    height:100vh;
+    background-color: #042F1A;
+}
+.footer{
+    height:4vw;
+    width:100%;
+    background-color: #FF73B5;
+    position: fixed;
+    /* margin-top: 30vw; */
+    bottom:0;
+    text-wrap: nowrap;
+    display:flex;
+    align-items: center;
+}
+.footer-slide{
+    color: #042F1A;
+    animation:  slide 20s linear infinite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display:inline-block;
+}
+.footer-slide i{
+    font-size: 1.5vw;
+    color:#042F1A;
+    margin: 0 6vw 0 6vw;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logo-strip{
+    width:100%;
+    height:15vw;
+    text-wrap: nowrap;
+    position: relative;
+    bottom:10vw;
+    overflow: hidden;
+}
+.logos{
+    animation: strip 10s linear infinite;
+    display:inline-block;
+   
+ 
+
+}
+.logos img{
+    height: 10vw;
+    width:10vw;
+    margin: 0 4.5vw 0 4.5vw;
+   
+}
+@keyframes strip{
+    from{
+        transform:translateX(0%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+.wave{
+    position: relative;
+    left: 0;
+    right:0; 
+    /* top: 0;  */
+    bottom:8vw;
+    right:0;
+    width:100%;
+    height:10vw;
+    overflow: hidden;
+}
+.wave-top{
+    background-image: url(wave.png)  ;
+    position: relative;
+    left:0;
+    top:0;
+    bottom: -10vw;
+    background-size:contain;
+    background-position: 0%;
+    width:100%;
+    height:100%;
+    /* display:fixed;
+    overflow: hidden; */
+    filter: invert(50%) sepia(85%) saturate(650%) hue-rotate(296deg) brightness(104%) contrast(90%);
+   
+
+}
+.pink-pg{
+    background-color: #FF73B5;
+    color:#042F1A;
+    height:60vw; 
+    
+    
+}
+.text{
+    width:63vw;
+    display:flex;
+    flex-direction: column;
+    padding: 10vw 0 0vw 10vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text h1{
+    text-align: left;
+    font-size: 4vw;
+}
+.text p{
+    width:30vw;
+}
+.eat3{
+    margin:-19vw 0 0vw 70vw;
+    height:25vw;
+    width:25vw;
+}
