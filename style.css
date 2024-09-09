@@ -22,8 +22,8 @@
    
 }
 .logoeat{
-    height:10vw;
-    width:17svw;
+    height:9vw;
+    width:15vw;
 }
 
 a{
@@ -61,6 +61,7 @@ a{
     height:25vw;
     width:25vw;
     transition:all 0.5s linear;
+    
 }
 .hmind{
     position:relative;
@@ -71,9 +72,6 @@ a{
     width:12vw;
     position:fixed;
     margin:15vw 137vw 0vw 45vw;
- 
-   
-   
 }
 .eat2.active{
     position:fixed;
