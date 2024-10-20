@@ -18,8 +18,7 @@
     height: 10vw;
     position: fixed;
     overflow: hidden;
-  
-   
+    z-index:9;
 }
 .logoeat{
     height:10vw;
@@ -61,6 +60,8 @@ a{
     height:25vw;
     width:25vw;
     transition:all 0.5s linear;
+    z-index:1;
+
     
 }
 .hmind{
@@ -72,6 +73,7 @@ a{
     width:12vw;
     position:fixed;
     margin:15vw 137vw 0vw 45vw;
+    z-index: 9;
 }
 .eat2.active{
     position:fixed;
@@ -123,9 +125,6 @@ a{
 .logos{
     animation: strip 10s linear infinite;
     display:inline-block;
-   
- 
-
 }
 .logos img{
     height: 10vw;
@@ -154,9 +153,10 @@ a{
 }
 .wave-top{
     background-image: url(wave.png)  ;
-    position: relative;
+    position: sticky;
     left:0;
     top:0;
+    z-index: 1;
     bottom: -10vw;
     background-size:contain;
     background-position: 0%;
