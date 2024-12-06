@@ -3,7 +3,7 @@ window.addEventListener('scroll', () =>
 {
     const scrollPosition = window.scrollY;
     // const rotation = scrollPosition * 0.1;
-    eat.classList.toggle('active')= 'rotateY(${rotation}180deg)';
+    eat.classList.toggle('active')= 'rotateY(${rotation}45deg)';
 
 });
 
@@ -95,10 +95,6 @@ anim.forEach(ani=>{
  anim.forEach(ani=>{
 ani.addEventListener('mouseleave', ()=>{
     boxes.forEach(box=>{
-     
-        //box.style.alignitems = "center"
-        //box.style.justifycontent = "center"
-        // box.style.marginright = "2vw"
         box.style.animation = "none"
         // box.style.animationPlayState = 'paused';
     })
