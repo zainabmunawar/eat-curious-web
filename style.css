@@ -51,6 +51,30 @@ a{
 .navbtn i{
     display: none;
 }
+.click{
+    /* background-color: #FF73B5;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top:-100%; */
+    display:none;
+}
+/* .click.active{
+    top:0;
+    position: fixed;
+    display: block;
+}
+#list{
+    position: relative;
+    top: 100vw;
+    /* left: 15vw; */
+    /* text-align: center;
+    font-size: 12vw;
+    font-weight: bolder;
+    color:#042F1A;
+    display:block;
+} */ 
+
 .header{
     /* height:100vh; */
     background-color: #042F1A;
@@ -97,6 +121,7 @@ a{
 .footer{
     height:4vw;
     width:100%;
+    overflow: hidden;
     background-color: #FF73B5;
     position: fixed;
     /* margin-top: 30vw; */
@@ -105,12 +130,13 @@ a{
     text-wrap: nowrap;
     display:flex;
     align-items: center;
+   
 }
 .footer-slide{
     color: #042F1A;
     animation:  slide 20s linear infinite;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display:inline-block;
+    display:block;
 }
 .footer-slide i{
     font-size: 1.5vw;
@@ -319,13 +345,14 @@ svg{
 /* BOXES */
 .box-pg{
     width: 130vw;
+    overflow-x:hidden;
     position: relative;
     right: 20vw;
     background-color:#042F1A; 
     padding: 14vw 20vw 20vw 17vw;
     border-top-left-radius: 90%;
     border-top-right-radius: 90%;
-    overflow: hidden;
+    display: block;
     /* Height: 100vh; */
 }
 .drool{
@@ -405,7 +432,7 @@ svg{
     /* justify-content: space-around; */
     align-items: center;
     /* color: white; */
-    width:100%;
+    /* width:100%; */
     height: 25vw;
     /* position: fixed;
     overflow: hidden;
@@ -414,7 +441,7 @@ svg{
 .logoeat{
     height: 30vw;
     width: 30vw;
-    margin: 15vw 10vw 20vw 30vw;
+    margin: 15vw 10vw 20vw 35vw;
     /* color: white; */
     display: inline;
 }
@@ -429,16 +456,15 @@ svg{
     height: 10vw;
     width:10vw;
     margin: 1vw 15vw 5vw 0vw;
-    
     /* border-radius: 0.2vw;
     background-color: #FF73B5; */
 } 
 .navbtn i{
-    display: block;
     font-size: 7vw;
+    display: block;
     color:#042F1A;
-    
 }
+
 .header{
     /* height: 100vh; */
     /* background-color: #042F1A;
@@ -447,7 +473,6 @@ svg{
     flex-direction: column;
     align-items: center; */
     padding: 25vw 0 23vw 0;
-    
 }
 .header h1{
     font-size: 25vw;
@@ -793,8 +818,29 @@ svg{
     right: 3vw;
     top: 45vw;
 }
+.click{
+    background-color: #FF73B5;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top:-100%;
 
 
 }
+#list{
+    position: relative;
+    top: 100vw;
+    /* left: 15vw;  */
+    text-align: center;
+    font-size: 12vw;
+    font-weight: bolder;
+    color:#042F1A;
+    display:block;
+} 
+}
+
+
+
 
 

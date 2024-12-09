@@ -7,80 +7,6 @@ window.addEventListener('scroll', () =>
 
 });
 
-// const wave = document.querySelector(".wave-top");
-
-// console.dir(wave);
-
-// let anim = document.querySelector('.box-strip');
-// let box = document.querySelector('.box');
-// box.addEventListener('mouseenter',function(){
-//     box.style.display = "inline-block";
-//     box.style.animation = "0s infinite";
-//     // box.style.text-wrap ; "no-wrap"
-// })
-// box.addEventListener('mouseleave',function(){
-//      box.style.display = "block";
-//     box.style.animation = "0s none";
-// })
-
-
-// const anim = document.querySelector('.box-strip');
-// //let box = document.querySelectorAll('.box');
-//  boxImg = document.querySelectorAll('.box img')
-// boxHead = document.querySelectorAll('.box h1')
-
-
-//  anim.addEventListener('mouseenter', () => {
-//     let box = document.querySelectorAll(".box");
-//     box.forEach(function(e){
-//     box.style.animation = "slide 4s linear infinite"
-//     // boxImg.style.animation = "slide 4s linear infinite";
-//     // box.style.position = "sticky" 
-//      anim.style.textwrap = "nowrap"
-//     anim.style.overflow = "hidden"
-//  })
-// })
-
-// anim.addEventListener('mouseleave', () => {
-   
-//     box.style.animation = none
-    // box.style.animation = "none"
-    //  anim.style.textwrap = "wrap"
-    // anim.style.overflow = "visible"
-   
-    // box.style.display = "inlinek"
-    // boxImg.style.display = "block"
-    // boxHead.style.display = "block"
-    
-// })
-
-// function tilesAnimation(){
-//     let fixed = document.querySelector('.fixed-img');
-// console.log(fixed);
-// let con = document.querySelector('.tile-container');
-// con.addEventListener('mouseenter',function(){
-//     fixed.style.display = "block"
-// }) 
-// con.addEventListener('mouseleave',function(){
-//     fixed.style.display = "none"
-// }) 
-// let tiles = document.querySelectorAll(".tile");
-// tiles.forEach(function(e){
-//     e.addEventListener('mouseenter',function(){
-//     let image = e.getAttribute("data-image");
-//     fixed.style.backgroundImage = `url(${image})`
-// })
-// })
-// }
-
-
-    
-
-// // }
-// let con = document.querySelector('.tile-container');
-// con.addEventListener('mouseenter',function(){
-//     fixed.style.display = "block"
-// }) 
 
 const anim = document.querySelectorAll('.box-strip')
 const boxes = document.querySelectorAll('.box')
@@ -101,3 +27,35 @@ ani.addEventListener('mouseleave', ()=>{
 })
 
  })
+
+ let pink = document.querySelector('.navbtn');
+ let logo = document.querySelector('.logoeat');
+ let click = document.querySelector('.click');
+ var flag = 0;
+ const icon = document.querySelector('i');
+ const newIcon = document.createElement('i');
+ newIcon.className = 'fa-solid fa-grip-lines';
+
+ pink.addEventListener('click',() =>{
+    // click.classList.toggle()
+    if(flag == 0){
+    logo.style.Color = "#042F1A"
+    click.style.display = "block";
+    pink.style.backgroundColor = "#042F1A";
+    icon.replaceWith(newIcon);
+    newIcon.style.color = "white";
+    click.style.top = 0;
+    flag = 1
+    }
+    else{
+        click.style.display = "none";
+        pink.style.backgroundColor = "#FF73B5";
+        flag = 0
+        newIcon.replaceWith(icon);
+        click.style.top = '-100%';
+
+      
+
+    }
+ })
+
