@@ -44,7 +44,7 @@ ani.addEventListener('mouseleave', ()=>{
     pink.style.backgroundColor = "#042F1A";
     icon.replaceWith(newIcon);
     newIcon.style.color = "white";
-    click.style.top = 0;
+    // click.style.top = 0;
     flag = 1
     }
     else{
@@ -52,7 +52,7 @@ ani.addEventListener('mouseleave', ()=>{
         pink.style.backgroundColor = "#FF73B5";
         flag = 0
         newIcon.replaceWith(icon);
-        click.style.top = '-100%';
+        // click.style.top = '-100%';
 
       
 
