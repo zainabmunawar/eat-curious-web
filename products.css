@@ -51,7 +51,7 @@ a{
 }
 .click{
  
-    height: 100vh;
+    height: 190vh;
     width: 100%;
     position: absolute;
     overflow: hidden;
@@ -62,9 +62,6 @@ a{
 
 #list{
     position: relative;
-    top: 100vw;
-    /* left: 35vw;  */
-    text-align: center;
     font-size: 12vw;
     font-weight: bolder;
     color:#042F1A;
@@ -74,7 +71,7 @@ a{
 
 /* Products Section */
 .products {
-    padding: 15vw 10vw;
+    padding: 25vw 10vw;
     text-align: center;
 
 }
@@ -186,6 +183,11 @@ footer {
         display: block;
         overflow: auto;
         background-color: #FF73B5;
+    }
+    #list{
+        top: 270vw;
+        /* right: 35vw;  */
+        text-align: center;
     }
 
     .product-grid {
