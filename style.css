@@ -471,7 +471,7 @@ svg{
 }
 #list{
     top: 70vw;
-    left: 35vw; 
+    /* left: 35vw;  */
     text-align: center;
 }
 
