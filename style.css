@@ -66,9 +66,6 @@ a{
 
 #list{
     position: relative;
-    top: 100vw;
-    right: 35vw; 
-    text-align: center;
     font-size: 12vw;
     font-weight: bolder;
     color:#042F1A;
@@ -472,6 +469,11 @@ svg{
     overflow: auto;
     background-color: #FF73B5;
 }
+#list{
+    top: 70vw;
+    right: 35vw; 
+    text-align: center;
+}
 
 .header{
     /* height: 100vh; */
@@ -653,9 +655,6 @@ svg{
     width: 46vw;
     position: relative;
     right: 47vw;
-
-
-   
 }
 .p-text{
     display: flex;
@@ -754,12 +753,9 @@ svg{
 
 .box-pg{
     width: 250vw;
-
     right: 80vw;
     background-color:#042F1A; 
     padding: 8vw;
-
-
     /* overflow: hidden; */
     /* Height: 100vh; */
 }
@@ -772,16 +768,11 @@ svg{
     margin-bottom: 10vw;
     /* display: inline-block; */
     /* transform-style:initial; */
-    /* transition: rotate(-20deg); */
-    
+    /* transition: rotate(-20deg); */  
 }
 .box-con{
     flex-direction: column;
-
     gap: 7vw;
-
-
-
 }
 .box-strip{
     height: 85vw;
@@ -844,8 +835,4 @@ svg{
     color:#042F1A;
     display:block;
 }  */
-
-
-
-
 }
