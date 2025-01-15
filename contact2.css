@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #042F1A;
+    color: #FFF;
+}
+header {
+    background-color: #042F1A;
+    height: 10vw;
+
+    /* padding: 20px; */
+    text-align: center;
+} 
+.navbar{
+    background-color: transparent;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    /* gap: vw; */
+    width:100vw;
+    height: 10vw;
+    position: fixed;
+    overflow: hidden;
+    z-index:14;
+}
+.logoeat{
+    height: 14vw;
+    width: 14vw;
+}
+a{
+    color: white;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbtn{
+    height: 5vw;
+    width:10vw;
+    border-radius: 0.2vw;
+    background-color: #FF73B5;
+}
+.navbtn a{
+    font-size: 1.5vw;
+    color: #042F1A;
+
+}
+.navbtn i{
+    display: none;
+}
+.click{
+ 
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 12;
+    /* top:-100%;  */
+    display:none;
+}
+
+#list{
+    position: relative;
+    top: 100vw;
+    /* left: 35vw;  */
+    text-align: center;
+    font-size: 12vw;
+    font-weight: bolder;
+    color:#042F1A;
+    display:block;
+} 
+
+/* header h1 {
+    margin: 0;
+    color: #042F1A;
+} */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFF;
+    color: #042F1A;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container h2 {
+    color: #FF73B5;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+}
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #FF73B5;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea {
+    resize: none;
+}
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FF73B5;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #E0629E;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #FF73B5;
+}
+@media (max-width: 600px){
+    .navbar{
+        background-color: transparent;
+        display:flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+        align-items: center;
+        /* color: white; */
+        /* width:100%; */
+        height: 25vw;
+
+        /* position: fixed;
+        overflow: hidden;
+        z-index:9; */
+    }
+    .logoeat{
+        height: 30vw;
+        width: 30vw;
+        margin: 15vw 10vw 20vw 35vw;
+        /* color: white; */
+        display: inline;
+    }
+     a{
+        /* color: white;
+        font-size: 2vw;
+        text-decoration: none;
+        text-transform: uppercase; */
+        display: none;
+    } 
+    .navbtn{
+        height: 10vw;
+        width:10vw;
+        margin: 1vw 15vw 5vw 0vw;
+        /* border-radius: 0.2vw;
+        background-color: #FF73B5; */
+    } 
+    .navbtn i{
+        font-size: 7vw;
+        display: block;
+        color:#042F1A;
+    }
+    .click.active{
+        /* top:0; */
+        position: fixed;
+        display: block;
+        overflow: auto;
+        background-color: #FF73B5;
+    }
+    .container {
+        max-width: 90%; 
+        margin: 40px 15px; /* Adjust margin for better spacing */
+        padding: 10px ; /* Reduce padding for compact layout */
+        box-shadow: none; /* Simplify appearance on smaller screens */
+    }
+
+    .container h2 {
+        font-size: 1.5rem; /* Scale down the heading size */
+        text-align: center; /* Center align the heading */
+    }
+
+    /* Form layout adjustments */
+    form {
+        flex-direction: column;
+        gap: 10px; /* Add spacing between form elements */
+    }
+
+    label {
+        font-size: 14px; /* Reduce font size for labels */
+    }
+
+    input, textarea {
+        font-size: 14px; /* Scale down text size for inputs */
+        padding: 8px; /* Adjust padding for smaller elements */
+    }
+
+    textarea {
+        min-height: 80px; /* Ensure a reasonable height for text areas */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button text size */
+        padding: 10px; /* Adjust padding for compact design */
+        width: 100%; /* Make buttons take full width */
+    }
+
+    footer {
+        font-size: 12px; /* Scale down footer text size */
+        margin-top: 15px; /* Reduce margin for compact layout */
+    }
+}

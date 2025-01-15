@@ -25,11 +25,12 @@
     height: 10vw;
     position: fixed;
     overflow: hidden;
-    z-index:9;
+    z-index:14;
 }
 .logoeat{
     height: 14vw;
     width: 14vw;
+
 }
 a{
     color: white;
@@ -42,6 +43,7 @@ a{
     width:10vw;
     border-radius: 0.2vw;
     background-color: #FF73B5;
+
 }
 .navbtn a{
     font-size: 1.5vw;
@@ -52,28 +54,26 @@ a{
     display: none;
 }
 .click{
-    /* background-color: #FF73B5;
+
     height: 100vh;
     width: 100%;
-    position: relative;
-    top:-100%; */
+    position: absolute;
+    overflow: hidden;
+    z-index: 12;
+    /* top:-100%;  */
     display:none;
 }
-/* .click.active{
-    top:0;
-    position: fixed;
-    display: block;
-}
+
 #list{
     position: relative;
     top: 100vw;
-    /* left: 15vw; */
-    /* text-align: center;
+    right: 35vw; 
+    text-align: center;
     font-size: 12vw;
     font-weight: bolder;
     color:#042F1A;
     display:block;
-} */ 
+} 
 
 .header{
     /* height:100vh; */
@@ -91,6 +91,7 @@ a{
 }
 
 .eat1{
+    /* position: absolute; */
     position: relative;
     bottom: 10vw;
     height:23vw;
@@ -464,6 +465,13 @@ svg{
     display: block;
     color:#042F1A;
 }
+.click.active{
+    /* top:0; */
+    position: fixed;
+    display: block;
+    overflow: auto;
+    background-color: #FF73B5;
+}
 
 .header{
     /* height: 100vh; */
@@ -819,28 +827,25 @@ svg{
     top: 45vw;
 }
 .click{
-    background-color: #FF73B5;
+    /* background-color: #FF73B5; */
     display: none;
-    height: 100vh;
+    /* height: 100vh;
     width: 100%;
-    position: relative;
+    position: relative; */ 
     /* top:-100%; */
-
-
 }
-#list{
+/* #list{
     position: relative;
-    top: 100vw;
+    top: 100vw; */
     /* left: 15vw;  */
-    text-align: center;
+    /* text-align: center;
     font-size: 12vw;
     font-weight: bolder;
     color:#042F1A;
     display:block;
-} 
+}  */
+
+
+
+
 }
-
-
-
-
-
