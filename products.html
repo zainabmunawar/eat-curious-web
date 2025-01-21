@@ -18,13 +18,18 @@
                 class = "logoeat">
             </a>
             </div>
-            <a href = "recipes">recipes</a>
-            <button class = "navbtn"><i class="fa-solid fa-bars"></i> <a href = "contact2.html"> CONTACT US</a> </button>
+            <a href = "cart.php">cart</a>
+            <button class = "navbtn"><i class="fa-solid fa-bars"></i> <a href = "contact.php"> CONTACT US</a> </button>
+            <div class = "shop"><a href = "cart.php">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class = "count">0</span>
+              </a></div>
             </div>
         <div class="click">
           <a id = "list" href = "index.html"> about</a>
           <a id = "list" href = "products.html"> products</a>
-          <a id = "list" href = "contact2.html"> contact</a>
+          <a id = "list" href = "contact.php"> contact</a>
+          <a id = "list" href = "cart.php"> cart</a>
         </div>
         <!-- <div class="logo">
             <h1>Eat Curious</h1>
@@ -38,42 +43,118 @@
             </ul>
         </nav> -->
     </header>
-
     <main>
+    <section class="products">
+        <h2>Our Delicious Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Classic Burger">
+                <h3>Classic Burger</h3>
+                <p>A juicy beef burger with fresh veggies and cheese.</p>
+                <span>$8.99</span>
+                <br/>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product_id" value="classic_burger">
+                    <input type="hidden" name="product_name" value="Classic Burger">
+                    <input type="hidden" name="product_price" value="8.99">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+          
+            <div class="product-item">
+                <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Margherita Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Traditional pizza with fresh mozzarella and basil.</p>
+                <span>$12.99</span>
+                <br/>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product_id" value="margherita_pizza">
+                    <input type="hidden" name="product_name" value="margherita_pizza">
+                    <input type="hidden" name="product_price" value="20.00">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="product-item">
+                <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Creamy Alfredo Pasta">
+                <h3>Creamy Alfredo Pasta</h3>
+                <p>Rich and creamy pasta topped with parmesan.</p>
+                <span>$10.99</span>
+                <br/>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product_id" value="creamy_alfredo_pasta">
+                    <input type="hidden" name="product_name" value="Creamy Alfredo Pasta">
+                    <input type="hidden" name="product_price" value="10.99">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- 
+     <main>
         <section class="products">
             <h2>Our Delicious Products</h2>
             <div class="product-grid">
                 <div class="product-item">
-                    <img src="burger.jpg" alt="Classic Burger">
+                    <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Classic Burger">
                     <h3>Classic Burger</h3>
                     <p>A juicy beef burger with fresh veggies and cheese.</p>
                     <span>$8.99</span>
+                <br/>
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="pizza.jpg" alt="Margherita Pizza">
+                    <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Margherita Pizza">
                     <h3>Margherita Pizza</h3>
                     <p>Traditional pizza with fresh mozzarella and basil.</p>
                     <span>$12.99</span>
+                    <br/>
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="pasta.jpg" alt="Creamy Alfredo Pasta">
+                    <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Creamy Alfredo Pasta">
                     <h3>Creamy Alfredo Pasta</h3>
                     <p>Rich and creamy pasta topped with parmesan.</p>
                     <span>$10.99</span>
+                    <br/>
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="salad.jpg" alt="Fresh Garden Salad">
-                    <h3>Fresh Garden Salad</h3>
-                    <p>A mix of crisp greens and veggies with dressing.</p>
-                    <span>$7.99</span>
+                    <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Classic Burger">
+                    <h3>Classic Burger</h3>
+                    <p>A juicy beef burger with fresh veggies and cheese.</p>
+                    <span>$8.99</span>
+                <br/>
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
                 </div>
+                <div class="product-item">
+                    <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Margherita Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p>Traditional pizza with fresh mozzarella and basil.</p>
+                    <span>$12.99</span>
+                    <br/>
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://www.shutterstock.com/image-photo/classic-hamburger-stock-photo-isolated-600nw-2282033179.jpg" alt="Creamy Alfredo Pasta">
+                    <h3>Creamy Alfredo Pasta</h3>
+                    <p>Rich and creamy pasta topped with parmesan.</p>
+                    <span>$10.99</span>
+                    <br/>
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </div>
+             
             </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Eat Curious. All rights reserved.</p>
-    </footer>
+    </footer>  -->
         
 <script src ="products.js"></script>     
 </body>

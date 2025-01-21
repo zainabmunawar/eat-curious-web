@@ -24,6 +24,7 @@ body {
     position: fixed;
     overflow: hidden;
     z-index:14;
+    /* margin-bottom: 5vw; */
 }
 .logoeat{
     height: 14vw;
@@ -34,6 +35,23 @@ a{
     font-size: 1.5vw;
     text-decoration: none;
     text-transform: uppercase;
+}
+.shop{
+    position: absolute;
+    right:6vw;
+}
+.navbar a span{
+    height: 1.5vw;
+    width: 1.5vw;
+    /* font-size: 1.5vw; */
+    background-color: #FF73B5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left:1vw;
+    bottom:-1vw;
 }
 .navbtn{
     height: 5vw;
@@ -65,144 +83,148 @@ a{
     font-size: 12vw;
     font-weight: bolder;
     color:#042F1A;
-    display:block;
+    display:none;
 } 
 
 
-/* Products Section */
-.products {
-    padding: 25vw 10vw;
-    text-align: center;
 
+/* Section Styling */
+.products {
+    text-align: center;
+    padding: 20px;
 }
 
 .products h2 {
-    font-size: 2.5rem;
-    color: #FF73B5; /* Pink heading */
-    margin-bottom: 30px;
+    color: #FF73B5;
+    font-size: 2rem;
+    margin: 20vw 0 0 0;
 }
 
+/* Product Grid Styling */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
 }
 
 .product-item {
-    background-color: #FFF; /* White cards */
-    border: 2px solid #FF73B5; /* Pink border */
+    background-color: #042F1A;
+    border: 2px solid #FF73B5;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
+    width: 250px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 115, 181, 0.4);
 }
 
 .product-item img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 2px solid #FF73B5;
     margin-bottom: 15px;
 }
 
 .product-item h3 {
+    color: #FF73B5;
     font-size: 1.5rem;
-    color: #042F1A; /* Dark green text */
     margin-bottom: 10px;
 }
 
 .product-item p {
+    color: white;
     font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .product-item span {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #FF73B5; /* Pink price */
+    color: #FF73B5;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #FF73B5; /* Pink footer */
-    color: #FFF; /* White text */
+/* Button Styling */
+.add-to-cart-btn {
+    background-color: #FF73B5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    .navbar{
-        background-color: transparent;
-        display:flex;
-        flex-direction: row;
-        /* justify-content: space-around; */
-        align-items: center;
-        /* color: white; */
-        /* width:100%; */
-        height: 25vw;
+.add-to-cart-btn:hover {
+    background-color: #FF4081;
+}
 
-        /* position: fixed;
-        overflow: hidden;
-        z-index:9; */
-    }
-    .logoeat{
-        height: 30vw;
-        width: 30vw;
-        margin: 15vw 10vw 20vw 35vw;
-        /* color: white; */
-        display: inline;
-    }
-     a{
-        /* color: white;
-        font-size: 2vw;
-        text-decoration: none;
-        text-transform: uppercase; */
-        display: none;
-    } 
-    .navbtn{
-        height: 10vw;
-        width:10vw;
-        margin: 1vw 15vw 5vw 0vw;
-        /* border-radius: 0.2vw;
-        background-color: #FF73B5; */
-    } 
-    .navbtn i{
-        font-size: 7vw;
-        display: block;
-        color:#042F1A;
-    }
-    .click.active{
-        /* top:0; */
-        position: fixed;
-        display: block;
-        overflow: auto;
-        background-color: #FF73B5;
-    }
-    #list{
-        top: 250vw;
-        /* right: 35vw;  */
-        text-align: center;
-    }
+/* Responsive Design */
 
+    @media (max-width: 600px) {
+        .navbar{
+            background-color: transparent;
+            display:flex;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            align-items: center;
+            /* color: white; */
+            /* width:100%; */
+            height: 25vw;
+    
+            /* position: fixed;
+            overflow: hidden;
+            z-index:9; */
+        }
+        .logoeat{
+            height: 30vw;
+            width: 30vw;
+            margin: 15vw 10vw 20vw 35vw;
+            /* color: white; */
+            display: inline;
+        }
+         a{
+            /* color: white;
+            font-size: 2vw;
+            text-decoration: none;
+            text-transform: uppercase; */
+            display: none;
+        } 
+        .navbtn{
+            height: 10vw;
+            width:10vw;
+            margin: 1vw 15vw 5vw 0vw;
+            /* border-radius: 0.2vw;
+            background-color: #FF73B5; */
+        } 
+        .navbtn i{
+            font-size: 7vw;
+            display: block;
+            color:#042F1A;
+        }
+        .click.active{
+            /* top:0; */
+            position: fixed;
+            display: block;
+            overflow: auto;
+            background-color: #FF73B5;
+        }
+        #list{
+            top: 250vw;
+            /* right: 35vw;  */
+            text-align: center;
+            display: block;
+        }
     .product-grid {
-        grid-template-columns: 1fr; /* Single column layout for small screens */
+        flex-direction: column;
+        align-items: center;
     }
 
     .product-item {
-        padding: 15px;
-    }
-
-    .product-item h3 {
-        font-size: 1.25rem;
-    }
-
-    .product-item span {
-        font-size: 1rem;
+        width: 90%;
     }
 }

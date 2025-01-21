@@ -36,19 +36,3 @@ pink.addEventListener('click',() =>{
        // click.style.top = '-100%';
    }
 })
-
-
-// let shop = document.querySelector('add-to-cart-btn');
-// let count = document.querySelector('count');
-// shop.addEventListener('click', ()=>{
-//    count++;
-// })
-let cartCount = 0;
-let button = document.querySelector('.add-to-cart-btn')
-function upadateCartCount(){
-   cartCount++;
-   document.querySelector('.count').innerText = cartCount;
-}
-document.querySelectorAll('.add-to-cart-btn').forEach(button =>{
-   button.addEventListener('click', upadateCartCount)
-})

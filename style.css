@@ -30,7 +30,6 @@
 .logoeat{
     height: 14vw;
     width: 14vw;
-
 }
 a{
     color: white;
@@ -38,12 +37,28 @@ a{
     text-decoration: none;
     text-transform: uppercase;
 }
+.shop{
+    position: absolute;
+    right:6vw;
+}
+.navbar a span{
+    height: 1.5vw;
+    width: 1.5vw;
+    /* font-size: 1.5vw; */
+    background-color: #FF73B5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left:1vw;
+    bottom:-1vw;
+}
 .navbtn{
     height: 3vw;
     width:10vw;
     border-radius: 0.2vw;
     background-color: #FF73B5;
-
 }
 .navbtn a{
     font-size: 1.5vw;
@@ -69,7 +84,7 @@ a{
     font-size: 12vw;
     font-weight: bolder;
     color:#042F1A;
-    display:block;
+    display:none;
 } 
 
 .header{
@@ -471,8 +486,9 @@ svg{
 }
 #list{
     top: 70vw;
-    /* left: 35vw;  */
+    /* right: 35vw;  */
     text-align: center;
+    display: block;
 }
 
 .header{

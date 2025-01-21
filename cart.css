@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #042F1A;
+    color: white;
+}
+
+header {
+    background-color: #042F1A;
+    height: 10vw;
+
+    /* padding: 20px; */
+    text-align: center;
+} 
+.navbar{
+    background-color: transparent;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    /* gap: vw; */
+    width:100vw;
+    height: 10vw;
+    position: fixed;
+    overflow: hidden;
+    z-index:14;
+}
+.logoeat{
+    height: 14vw;
+    width: 14vw;
+}
+a{
+    color: white;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.shop{
+    position: absolute;
+    right:6vw;
+}
+.navbar a span{
+    height: 1.5vw;
+    width: 1.5vw;
+    /* font-size: 1.5vw; */
+    background-color: #FF73B5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left:1vw;
+    bottom:-1vw;
+}
+.navbtn{
+    height: 5vw;
+    width:10vw;
+    border-radius: 0.2vw;
+    background-color: #FF73B5;
+}
+.navbtn a{
+    font-size: 1.5vw;
+    color: #042F1A;
+
+}
+.navbtn i{
+    display: none;
+}
+.click{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 12;
+    /* top:-100%;  */
+    display:none;
+}
+
+#list{
+    position: relative;
+    font-size: 12vw;
+    font-weight: bolder;
+    color:#042F1A;
+    display:none;
+} 
+
+/* Table Styling */
+.space{
+    padding:20px 40px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    background-color: #042F1A;
+    color: white;
+    /* padding: 40px; */
+}
+
+table th, table td {
+    border: 2px solid #FF73B5;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #FF73B5;
+    color: #042F1A;
+    font-size: 1.2rem;
+}
+
+table td {
+    font-size: 1rem;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 115, 181, 0.1);
+}
+
+/* Paragraph Styling */
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FF73B5;
+    margin-top: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 10vw 10px;
+    position: absolute;
+    right: 60vw;
+}
+
+h1, h2 {
+    color:#FF73B5;
+    text-align: center;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #FF73B5;
+   
+
+    
+}
+
+.form-control {
+    border: 2px solid #FF73B5;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    color: #042F1A;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #FF4081;
+    box-shadow: 0 0 5px #FF4081;
+}
+
+.btn-primary {
+    background-color: #FF73B5;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:15px 8vw 10px 0;
+}
+
+.btn-primary:hover {
+    background-color: #FF4081;
+}
+
+.btn-danger {
+    background-color: #FF4081;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:15px 0 0 -70px;
+}
+
+.btn-danger:hover {
+    background-color: #FF3061;
+}
+
+.img-thumbnail {
+    border: 3px solid #FF73B5;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    right: 10vw;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: absolute;
+    left:20vw;
+}
+
+.col-md-3 {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.mb-4 {
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    color: #FF73B5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ 
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 1 1 100%;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    .container{
+        margin-left: 20vw;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-primary, .btn-danger {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
