@@ -44,7 +44,7 @@ if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 }
 
-// Handle form submission
+// Handle form submission for adding items
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
     $product_id = $_POST['product_id'];
     $product_name = $_POST['product_name'];
@@ -66,28 +66,59 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
     exit();
 }
 
+// Handle form submission for reducing quantity
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['reduce_product_id'])) {
+    $reduce_product_id = $_POST['reduce_product_id'];
+
+    // Reduce quantity or remove item from cart
+    if (isset($_SESSION['cart'][$reduce_product_id])) {
+        $_SESSION['cart'][$reduce_product_id]['quantity']--;
+        if ($_SESSION['cart'][$reduce_product_id]['quantity'] <= 0) {
+            unset($_SESSION['cart'][$reduce_product_id]); // Remove item if quantity is zero
+        }
+    }
+
+    // Redirect to cart page
+    header('Location: cart.php');
+    exit();
+}
+
 // Display cart contents
 echo "<h2>Your Cart</h2>";
 if (!empty($_SESSION['cart'])) {
     echo "<table>";
-    echo "<tr><th>Product</th><th>Price</th><th>Quantity</th><th>Total</th></tr>";
+    echo "<tr><th>Product</th><th>Price</th><th>Quantity</th><th>Total</th><th>Action</th></tr>";
+
+    $grand_total = 0; // Initialize total bill variable
+
     foreach ($_SESSION['cart'] as $id => $product) {
         $total = $product['price'] * $product['quantity'];
+        $grand_total += $total; // Add item total to grand total
         echo "<tr>";
         echo "<td>{$product['name']}</td>";
         echo "<td>\${$product['price']}</td>";
         echo "<td>{$product['quantity']}</td>";
         echo "<td>\${$total}</td>";
+        echo "<td>
+                <form method='POST' action='' style='display:inline;'>
+                    <input type='hidden' name='reduce_product_id' value='{$id}'>
+                    <button type='submit' class='btn'>Reduce Quantity</button>
+                </form>
+              </td>";
         echo "</tr>";
     }
+
     echo "</table>";
+
+    // Display the total bill
+    echo "<h3>Total Bill: \${$grand_total}</h3>";
 } else {
     echo "<p>Your cart is empty.</p>";
 }
 ?>
 
-
-
+<button class = "end-btn"><a href = "contact.php"> Proceed to checkout</a> </button>
+<button class = "end-btn"><a href = "products.html"> Add more products</a> </button>
 
 <?php require('db.php'); ?>
 <div class="container mt-4">

@@ -50,5 +50,5 @@ function upadateCartCount(){
    document.querySelector('.count').innerText = cartCount;
 }
 document.querySelectorAll('.add-to-cart-btn').forEach(button =>{
-   button.addEventListener('click', upadateCartCount)
+   button.addEventListener('click', upadateCartCount);
 })

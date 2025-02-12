@@ -36,3 +36,15 @@ pink.addEventListener('click',() =>{
        // click.style.top = '-100%';
    }
 })
+let cartCount = 0;
+let button = document.querySelector('.add-to-cart-btn')
+function upadateCartCount(){
+   cartCount++;
+   document.querySelector('.count').innerText = cartCount;
+}
+// document.querySelectorAll('.add-to-cart-btn').forEach(button =>{
+//    button.addEventListener('click', function(event){
+//       event.preventDefault();
+//       upadateCartCount()
+//    })
+// })
